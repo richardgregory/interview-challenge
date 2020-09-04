@@ -11,7 +11,7 @@ export const Preview = ({ dishes, onRemove }) => (
           id={dish.id}
           name={dish.name}
           dietaries={dish.dietaries}
-          onRemove={() => onRemove(dish.id)}
+          onRemove={() => onRemove(dish.id, dish.dietaries)}
         />
       </li>
     ))}

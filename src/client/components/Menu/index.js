@@ -26,9 +26,8 @@ export const Menu = () => {
     }
   };
 
-  const handleRemove = (id) => {
-    const dish = data.items.find((dish) => id === dish.id);
-    dispatch({ type: "remove", payload: dish });
+  const handleRemove = (id, dietaries) => {
+    dispatch({ type: "remove", payload: { id, dietaries } });
   };
 
   return (
